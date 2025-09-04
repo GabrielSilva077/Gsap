@@ -16,7 +16,8 @@ const Navbar = () => {
       { backgroundColor: "transparent" },
       {
         backgroundColor: "#00000050",
-        backgroundFilter: "blur(20px)",
+        backdropFilter: "blur(5px)",
+        WebkitBackdropFilter: "blur(5px)",
         duration: 1,
         ease: "power1.inOut",
       }
@@ -28,7 +29,7 @@ const Navbar = () => {
       <div>
         <a href="#home" className="flex items-center gap-2">
           <img src="/images/logo.png" alt="logo" />
-          <p>Velvet Pour</p>
+          <p>Chop</p>
         </a>
 
         <ul className="flex gap-6">

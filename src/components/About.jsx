@@ -10,19 +10,30 @@ const About = () => {
     });
 
     const scrollTimeline = gsap.timeline({
-        scrollTrigger: {
-            trigger: '#about',
-            start: 'top center'
-        }
-    })
+      scrollTrigger: {
+        trigger: "#about",
+        start: "top center",
+      },
+    });
 
     scrollTimeline
-    .from(titleSplit.words, {
-        opacity: 0, duration: 1, yPercent: 100, ease: 'expo', stagger: 0.02
-    })
-    .from('.top-grid div, .bottom-grid div', {
-        opacity: 0, duration: 1, ease: 'power1.inOut', stagger: 0.04,
-    }, '-=0.5')
+      .from(titleSplit.words, {
+        opacity: 0,
+        duration: 1,
+        yPercent: 100,
+        ease: "expo",
+        stagger: 0.02,
+      })
+      .from(
+        ".top-grid div, .bottom-grid div",
+        {
+          opacity: 0,
+          duration: 1,
+          ease: "power1.inOut",
+          stagger: 0.04,
+        },
+        "-=0.5"
+      );
   });
 
   return (
@@ -30,26 +41,25 @@ const About = () => {
       <div className="mb-16 md:px-0 px-5">
         <div className="content">
           <div className="md:col-span-8">
-            <p className="badge">best Cocktails</p>
+            <p className="badge">Melhores Bebidas</p>
             <h2>
-              where every details matters <span className="text-white">-</span>
-              from muddle to garnish
+              Onde cada detalhe importa <span className="text-white">-</span>
+              da mistura à guarnição
             </h2>
           </div>
 
           <div className="sub-content">
             <p>
-              Every cocktail we serve is a reflection of our obsession with
-              detail — from the first muddle to the final garnish. That care is
-              what turns a simple drink into something truly memorable.
+              Cada coquetel que servimos é um reflexo da nossa obsessão pelos
+              detalhes — da primeira maceração à decoração final. Esse cuidado é
+              o que transforma um drinque simples em algo verdadeiramente
+              memorável.
             </p>
             <div>
               <p className="md:text-3xl text-xl font-bold">
                 <span>4,5</span>/5
               </p>
-              <p className="text-sm text-white-100">
-                More than +12000 customers
-              </p>
+              <p className="text-sm text-white-100">Mais de +12000 clientes</p>
             </div>
           </div>
         </div>

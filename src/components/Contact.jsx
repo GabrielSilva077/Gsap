@@ -20,22 +20,28 @@ const Contact = () => {
         yPercent: 100,
         stagger: 0.02,
       })
-
       .from("#contact h3, #contact p", {
         opacity: 0,
         yPercent: 100,
         stagger: 0.02,
       })
-      .to("#f-right-leaf", {
-        y: "-50",
-        duration: 1,
-        ease: "power1.inOut",
-      })
-      .to("#f-left-leaf", {
-        y: "-50",
-        duration: 1,
-        ease: "power1.inOut",
-      }, '<');
+      .to(
+        "#f-right-leaf",
+        {
+          y: "-50",
+          duration: 1,
+          ease: "power1.inOut",
+        }
+      )
+      .to(
+        "#f-left-leaf",
+        {
+          y: "-50",
+          duration: 1,
+          ease: "power1.inOut",
+        },
+        "<"
+      );
   });
 
   return (
@@ -44,21 +50,21 @@ const Contact = () => {
       <img src="/images/footer-left-leaf.png" alt="" id="f-left-leaf" />
 
       <div className="content">
-        <h2>Where to find us</h2>
+        <h2>Onde nos encontrar</h2>
 
         <div>
-          <h3>visit our bar</h3>
-          <p>456, Raq Blvd. #404, Los Angeles, CA 90210</p>
+          <h3>Venha visitar nosso bar</h3>
+          <p>Rua Raq, 456, Sala 404, Los Angeles, CA 90210</p>
         </div>
 
         <div>
-          <h3>Contact us</h3>
-          <p>(555) 987-6543</p>
-          <p>hello@jsmcocktail.com</p>
+          <h3>Fale conosco</h3>
+          <p>Telefone: (11) 92222-2222</p>
+          <p>E-mail: meu.email.com</p>
         </div>
 
         <div>
-          <h3>open every day</h3>
+          <h3>Horário de funcionamento</h3>
           {openingHours.map((time) => (
             <p key={time.day}>
               {time.day} : {time.time}
@@ -67,7 +73,7 @@ const Contact = () => {
         </div>
 
         <div>
-          <h3>Socials</h3>
+          <h3>Redes sociais</h3>
           <div className="flex-center gap-5">
             {socials.map((social) => (
               <a
@@ -82,6 +88,7 @@ const Contact = () => {
             ))}
           </div>
         </div>
+
       </div>
     </footer>
   );

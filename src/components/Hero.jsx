@@ -72,7 +72,7 @@ const Hero = () => {
   return (
     <>
       <section id="hero" className="noisy">
-        <h1 className="title">Mixology</h1>
+        <h1 className="title">Choppinho</h1>
         <img
           src="images/hero-left-leaf.png"
           alt="left-leaf"
@@ -87,18 +87,18 @@ const Hero = () => {
         <div className="body">
           <div className="content">
             <div className="space-y-5 hidden md:block">
-              <p>Cool. Crisp. Classic</p>
+              <p>Fresco. Clássico</p>
               <p className="subtitle">
-                Sip the Spirit <br /> of summer
+                Saboreie o Espírito <br /> do verão
               </p>
             </div>
             <div className="view-cocktails">
               <p className="subtitle">
-                Every cocktail on our menu is a blend of premium ingredients,
-                creative flair, and timeless recipes — designed to delight your
-                senses.
+                Cada coquetel do nosso cardápio é uma mistura de ingredientes
+                premium, toque criativo e receitas atemporais — elaboradas para
+                encantar seus sentidos.
               </p>
-              <a href="#cocktails">View Cocktails</a>
+              <a href="#cocktails">Ver Coquetéis</a>
             </div>
           </div>
         </div>
